@@ -267,6 +267,7 @@ mark {
 
 .bg-color {
     background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+    opacity: 0.8;
 }
 
 .text-color {
@@ -758,25 +759,87 @@ header .go-back i {
     padding: 20px 40px;
 }
 
-@media only screen and (min-width: 1418px) {
-    .recommend {
-        margin-top: 20px;
-        padding: 0 0.75rem;
-    }
-}
-
+/*全局基础样式*/
+/*小屏幕下(手机类)的样式*/
 @media only screen and (max-width: 601px) {
-    .index-card .card .card-content {
-        padding: 10px 10px;
+    .container {
+        width: 95%;
+    }
+    header .brand-logo .logo-span {
+        font-size: 1rem;
+    }
+    .bg-cover .title {
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 1.85em;
+        margin-bottom: 20px;
+        position: relative;
     }
 }
 
 /*中等屏幕下(平板类)的样式*/
 @media only screen and (min-width: 600px) and (max-width: 992px) {
+    .container {
+        width: 90%;
+    }
+    header .brand-logo .logo-span {
+        font-size: 2rem;
+    }
+    .bg-cover .title {
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 1.85em;
+        margin-bottom: 20px;
+        position: relative;
+    }
+}
+/*大屏幕下(桌面类)的样式*/
+@media only screen and (min-width: 993px) {
+    .container {
+        width: 85%;
+        max-width: 1125px;
+    }
+
+    .post-container {
+        width: 90%;
+        margin: 0 auto;
+        max-width: 1250px;
+    }
+
+    header .brand-logo .logo-span {
+        font-size: 2rem;
+    }
+
+    .bg-cover .title {
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 1.85em;
+        margin-bottom: 20px;
+        position: relative;
+    }
+}
+
+/*原样式开始*/
+/*@media only screen and (min-width: 1418px) {
+    .recommend {
+        margin-top: 20px;
+        padding: 0 0.75rem;
+    }
+}*/
+
+/*@media only screen and (max-width: 601px) {
+    .index-card .card .card-content {
+        padding: 10px 10px;
+    }
+}*/
+
+/*中等屏幕下(平板类)的样式*/
+/*@media only screen and (min-width: 600px) and (max-width: 992px) {
     .index-card .card .card-content {
         padding: 20px 20px;
     }
-}
+}*/
+/*原样式结束*/
 
 .recommend .row .col {
     padding: 0 1.25rem;
